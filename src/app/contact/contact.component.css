@@ -1,0 +1,38 @@
+.icon {
+    position: relative;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.icon i,
+h2 {
+    color: #2c3e50;
+}
+
+.icon::after {
+    content: "";
+    height: 3px;
+    width: 100px;
+    background-color: #2c3e50;
+    position: absolute;
+    top: 50%;
+    left: 70px;
+
+}
+
+.icon::before {
+    content: "";
+    height: 3px;
+    width: 100px;
+    background-color: #2c3e50;
+    position: absolute;
+    top: 50%;
+    right: 70px;
+
+}
+.btn{
+    color: #fff;
+    background-color: #1abc9c;
+}

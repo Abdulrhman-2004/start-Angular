@@ -1,0 +1,104 @@
+.icon {
+    position: relative;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.icon i,
+h2 {
+    color: #2c3e50;
+}
+
+.icon::after {
+    content: "";
+    height: 3px;
+    width: 100px;
+    background-color: #2c3e50;
+    position: absolute;
+    top: 50%;
+    left: 70px;
+
+}
+
+.icon::before {
+    content: "";
+    height: 3px;
+    width: 100px;
+    background-color: #2c3e50;
+    position: absolute;
+    top: 50%;
+    right: 70px;
+
+}
+
+img {
+    width: 100%;
+}
+
+.porImg img,
+.layar {
+    border-radius: 10px;
+}
+
+.porImg {
+    position: relative;
+}
+
+.layar {
+    position: absolute;
+    background-color: rgba(26, 188, 156, 0.9);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.porImg:hover .layar {
+    opacity: 1;
+}
+
+.layar i {
+    font-size: 50px;
+}
+
+.layarBox {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 9999;
+    overflow: auto;
+}
+
+.box {
+    background-color: #fff;
+    position: absolute;
+    width: 85%;
+    top: 30px;
+    left: 7%;
+}
+
+.boxImg img {
+    width: 60%;
+
+}
+
+.btn {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+.closeIcon {
+    font-size: 30px;
+    color: #1abc9c;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
